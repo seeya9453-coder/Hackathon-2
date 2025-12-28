@@ -13,7 +13,7 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'cyberpunk_secret_key_ve
 CORS(app, 
      supports_credentials=True,
      origins=[
-         "https://*.netlify.app",
+         "https://cyberverseeeeee.netlify.app", 
          "http://localhost:*",
          "http://127.0.0.1:*"
      ],
