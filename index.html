@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CYBERVERSE | Next-Gen Gaming</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* --- CORE DESIGN SYSTEM --- */
+        /* [PASTE YOUR EXACT CSS FROM ORIGINAL FILE HERE - KEEPING IT SAME] */
         :root {
             --neon-red: #ff003c;
             --neon-blue: #00f3ff;
@@ -23,100 +20,33 @@
             --text-glow-red: 0 0 10px rgba(255, 0, 60, 0.7);
             --box-glow-blue: 0 0 15px rgba(0, 243, 255, 0.15);
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             background-color: var(--obsidian);
             color: #fff;
             font-family: 'Rajdhani', sans-serif;
             overflow-x: hidden;
-            background-image:
-                linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+            background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
                 url('https://images.unsplash.com/photo-1535295972055-1c762f4483e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
             background-size: cover;
             background-attachment: fixed;
         }
-
-        h1,
-        h2,
-        h3,
-        .brand-font {
-            font-family: 'Orbitron', sans-serif;
-            text-transform: uppercase;
-        }
-
-        /* --- UTILITIES --- */
-        .hidden {
-            display: none !important;
-        }
-
-        .flex {
-            display: flex;
-        }
-
-        .flex-col {
-            flex-direction: column;
-        }
-
-        .items-center {
-            align-items: center;
-        }
-
-        .justify-between {
-            justify-content: space-between;
-        }
-
-        .justify-center {
-            justify-content: center;
-        }
-
-        .gap-2 {
-            gap: 0.5rem;
-        }
-
-        .gap-4 {
-            gap: 1rem;
-        }
-
-        .w-full {
-            width: 100%;
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        .mt-4 {
-            margin-top: 1rem;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* --- GLOW EFFECTS --- */
-        .text-neon-blue {
-            color: var(--neon-blue);
-            text-shadow: var(--text-glow-blue);
-        }
-
-        .text-neon-red {
-            color: var(--neon-red);
-            text-shadow: var(--text-glow-red);
-        }
-
-        .text-neon-green {
-            color: var(--neon-green);
-            text-shadow: 0 0 8px rgba(10, 255, 10, 0.5);
-        }
-
+        h1, h2, h3, .brand-font { font-family: 'Orbitron', sans-serif; text-transform: uppercase; }
+        .hidden { display: none !important; }
+        .flex { display: flex; }
+        .flex-col { flex-direction: column; }
+        .items-center { align-items: center; }
+        .justify-between { justify-content: space-between; }
+        .justify-center { justify-content: center; }
+        .gap-2 { gap: 0.5rem; }
+        .gap-4 { gap: 1rem; }
+        .w-full { width: 100%; }
+        .text-center { text-align: center; }
+        .mt-4 { margin-top: 1rem; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .text-neon-blue { color: var(--neon-blue); text-shadow: var(--text-glow-blue); }
+        .text-neon-red { color: var(--neon-red); text-shadow: var(--text-glow-red); }
+        .text-neon-green { color: var(--neon-green); text-shadow: 0 0 8px rgba(10, 255, 10, 0.5); }
         .cyber-border {
             border: 1px solid var(--glass-border);
             box-shadow: var(--box-glow-blue);
@@ -125,7 +55,6 @@
             border-radius: 4px;
             position: relative;
         }
-
         .cyber-border::before {
             content: '';
             position: absolute;
@@ -135,7 +64,6 @@
             height: 2px;
             background: linear-gradient(90deg, transparent, var(--neon-blue), transparent);
         }
-
         .cyber-input {
             background: rgba(0, 0, 0, 0.5);
             border: 1px solid var(--glass-border);
@@ -147,15 +75,12 @@
             outline: none;
             transition: 0.3s;
         }
-
         .cyber-input:focus {
             box-shadow: 0 0 15px rgba(0, 243, 255, 0.3);
             border-color: var(--neon-blue);
         }
-
         .cyber-btn {
             background: transparent;
-            /* linear-gradient(45deg, transparent 5%, var(--neon-blue) 5%); */
             border: 1px solid var(--neon-blue);
             color: var(--neon-blue);
             padding: 10px 25px;
@@ -169,35 +94,14 @@
             overflow: hidden;
             clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
         }
-
         .cyber-btn:hover {
             background: var(--neon-blue);
             color: #000;
             box-shadow: 0 0 20px var(--neon-blue);
         }
-
-        .cyber-btn.red {
-            border-color: var(--neon-red);
-            color: var(--neon-red);
-        }
-
-        .cyber-btn.red:hover {
-            background: var(--neon-red);
-            color: #000;
-            box-shadow: 0 0 20px var(--neon-red);
-        }
-
-        /* --- LOADERS & ANIMATIONS --- */
-        @keyframes scanline {
-            0% {
-                top: -50%;
-            }
-
-            100% {
-                top: 150%;
-            }
-        }
-
+        .cyber-btn.red { border-color: var(--neon-red); color: var(--neon-red); }
+        .cyber-btn.red:hover { background: var(--neon-red); color: #000; box-shadow: 0 0 20px var(--neon-red); }
+        @keyframes scanline { 0% { top: -50%; } 100% { top: 150%; } }
         .scanline {
             position: fixed;
             top: 0;
@@ -209,9 +113,6 @@
             pointer-events: none;
             z-index: 9999;
         }
-
-        /* --- VIEWS --- */
-        /* LANDING */
         #view-landing {
             height: 100vh;
             display: flex;
@@ -221,29 +122,13 @@
             background: radial-gradient(circle at center, #0a0a16 0%, #000 100%);
             text-align: center;
         }
-
         .enter-btn-large {
             font-size: 2rem;
             padding: 20px 60px;
             margin-top: 50px;
             animation: pulse 2s infinite;
         }
-
-        @keyframes pulse {
-
-            0%,
-            100% {
-                transform: scale(1);
-                opacity: 1;
-            }
-
-            50% {
-                transform: scale(1.05);
-                opacity: 0.8;
-            }
-        }
-
-        /* NAVBAR */
+        @keyframes pulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.05); opacity: 0.8; } }
         .navbar {
             padding: 1rem 2rem;
             display: flex;
@@ -256,8 +141,6 @@
             z-index: 100;
             backdrop-filter: blur(5px);
         }
-
-        /* LISTING */
         .filters-bar {
             background: rgba(0, 0, 0, 0.6);
             padding: 20px;
@@ -267,39 +150,22 @@
             align-items: center;
             flex-wrap: wrap;
         }
-
-        .cafe-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 25px;
-        }
-
+        .cafe-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 25px; }
         .cafe-card {
             background: rgba(10, 10, 15, 0.6);
             border: 1px solid rgba(0, 243, 255, 0.1);
             transition: 0.3s;
             overflow: hidden;
             position: relative;
+            cursor: pointer;
         }
-
         .cafe-card:hover {
             transform: translateY(-5px);
             border-color: var(--neon-blue);
             box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
         }
-
-        .cafe-img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-bottom: 1px solid var(--glass-border);
-        }
-
-        .cafe-content {
-            padding: 20px;
-        }
-
-        /* DETAIL PAGE */
+        .cafe-img { width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--glass-border); }
+        .cafe-content { padding: 20px; }
         .detail-hero {
             height: 400px;
             background-size: cover;
@@ -310,7 +176,6 @@
             padding: 40px;
             border-bottom: 2px solid var(--neon-blue);
         }
-
         .detail-hero::before {
             content: '';
             position: absolute;
@@ -320,59 +185,9 @@
             bottom: 0;
             background: linear-gradient(to top, #050510, transparent);
         }
-
-        .hero-title {
-            position: relative;
-            z-index: 2;
-        }
-
-        .booking-panel {
-            background: rgba(0, 0, 0, 0.8);
-            padding: 30px;
-            border: 1px solid var(--neon-blue);
-        }
-
-        .cyber-input {
-            width: 100%;
-            padding: 12px;
-            background: #000;
-            /* Border color matches your 'blue-saber' variable */
-            border: 1px solid var(--neon-blue);
-            /* Text color for the date and duration */
-            color: var(--neon-blue);
-            font-family: 'Rajdhani', sans-serif;
-            outline: none;
-            box-sizing: border-box;
-            appearance: none;
-            /* Removes default browser styling for cleaner look */
-        }
-
-        .cyber-input:focus {
-            box-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
-            border-color: var(--neon-blue);
-        }
-
-        /* This is the part that changes the icon color to white */
-        .cyber-input::-webkit-calendar-picker-indicator {
-            /* Yeh filter icon ko neon blue (cyan) jaisa color deta hai */
-            filter: invert(61%) sepia(80%) saturate(2855%) hue-rotate(155deg) brightness(102%) contrast(105%);
-            cursor: pointer;
-            opacity: 1;
-            /* Taaki icon clear dikhe */
-        }
-
-        .cyber-input::-webkit-calendar-picker-indicator:hover {
-            opacity: 1;
-        }
-
-        /* SLOTS */
-        .slot-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-            gap: 10px;
-            margin-top: 20px;
-        }
-
+        .hero-title { position: relative; z-index: 2; }
+        .booking-panel { background: rgba(0, 0, 0, 0.8); padding: 30px; border: 1px solid var(--neon-blue); }
+        .slot-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 10px; margin-top: 20px; }
         .slot-btn {
             padding: 10px;
             border: 1px solid #333;
@@ -382,42 +197,16 @@
             text-align: center;
             font-family: 'Rajdhani', sans-serif;
         }
-
-        .slot-btn.available {
-            border-color: var(--neon-green);
-            color: var(--neon-green);
-        }
-
-        .slot-btn.available:hover,
-        .slot-btn.selected {
+        .slot-btn.available { border-color: var(--neon-green); color: var(--neon-green); }
+        .slot-btn.available:hover, .slot-btn.selected {
             background: var(--neon-green);
             color: #000;
             font-weight: bold;
             box-shadow: 0 0 10px var(--neon-green);
         }
-
-        .slot-btn.booked {
-            border-color: var(--neon-red);
-            color: var(--neon-red);
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-
-        /* AUTH FORMS */
-        .auth-box {
-            max-width: 400px;
-            margin: 100px auto;
-            padding: 40px;
-        }
-
-        /* NOTIFICATIONS */
-        #notification-area {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
-
+        .slot-btn.booked { border-color: var(--neon-red); color: var(--neon-red); opacity: 0.5; cursor: not-allowed; }
+        .auth-box { max-width: 400px; margin: 100px auto; padding: 40px; }
+        #notification-area { position: fixed; bottom: 20px; right: 20px; z-index: 1000; }
         .toast {
             background: rgba(0, 0, 0, 0.9);
             border: 1px solid var(--neon-blue);
@@ -427,35 +216,21 @@
             border-left: 5px solid var(--neon-blue);
             animation: slideIn 0.3s ease;
         }
-
-        @keyframes slideIn {
-            from {
-                transform: translateX(100%);
-            }
-
-            to {
-                transform: translateX(0);
-            }
-        }
+        @keyframes slideIn { from { transform: translateX(100%); } to { transform: translateX(0); } }
     </style>
 </head>
-
 <body>
-
     <div class="scanline"></div>
     <div id="notification-area"></div>
-
     <div id="app">
-
-        <!-- === LANDING VIEW === -->
+        <!-- LANDING VIEW -->
         <div id="view-landing" class="hidden">
-            <h1 class="text-neon-blue"
-                style="font-size: 5rem; letter-spacing: 10px; text-shadow: 0 0 30px var(--neon-blue);">CYBERVERSE</h1>
+            <h1 class="text-neon-blue" style="font-size: 5rem; letter-spacing: 10px; text-shadow: 0 0 30px var(--neon-blue);">CYBERVERSE</h1>
             <p style="font-size: 1.5rem; letter-spacing: 5px; color: #aaa; margin-top: -10px;">ELITE GAMING STATIONS</p>
             <button onclick="router.navigate('login')" class="cyber-btn enter-btn-large">INITIALIZE LINK</button>
         </div>
 
-        <!-- === AUTH VIEWS === -->
+        <!-- AUTH VIEWS -->
         <div id="view-login" class="hidden">
             <div class="container">
                 <div class="auth-box cyber-border">
@@ -465,10 +240,8 @@
                         <input type="email" id="login-email" class="cyber-input" placeholder="Net ID (Email)">
                         <input type="password" id="login-pass" class="cyber-input" placeholder="Passcode">
                         <button onclick="auth.login()" class="cyber-btn w-full">CONNECT</button>
-                        <p class="text-center" style="color:#666; margin-top:10px;">No ID? <a href="#"
-                                onclick="router.navigate('signup')" class="text-neon-blue">Create Node</a></p>
-                        <button onclick="auth.demoLogin()" class="cyber-btn w-full"
-                            style="margin-top:20px; border-color: white; color: white;">DEMO ACCESS</button>
+                        <p class="text-center" style="color:#666; margin-top:10px;">No ID? <a href="#" onclick="router.navigate('signup')" class="text-neon-blue">Create Node</a></p>
+                        <button onclick="auth.demoLogin()" class="cyber-btn w-full" style="margin-top:20px; border-color: white; color: white;">DEMO ACCESS</button>
                     </div>
                 </div>
             </div>
@@ -485,26 +258,22 @@
                         <input type="text" id="reg-phone" class="cyber-input" placeholder="Comms (Phone)">
                         <input type="password" id="reg-pass" class="cyber-input" placeholder="Passcode">
                         <button onclick="auth.signup()" class="cyber-btn w-full">REGISTER</button>
-                        <p class="text-center" style="color:#666; margin-top:10px;">Existing? <a href="#"
-                                onclick="router.navigate('login')" class="text-neon-blue">Connect</a></p>
+                        <p class="text-center" style="color:#666; margin-top:10px;">Existing? <a href="#" onclick="router.navigate('login')" class="text-neon-blue">Connect</a></p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- === MAIN APP STRUCTURE (Listing, Details, etc) === -->
+        <!-- MAIN INTERFACE -->
         <div id="main-interface" class="hidden">
             <nav class="navbar">
                 <div class="flex items-center gap-4">
-                    <h2 class="text-neon-blue brand-font" style="font-size: 1.8rem; cursor:pointer;"
-                        onclick="router.navigate('listing')">CYBERVERSE</h2>
+                    <h2 class="text-neon-blue brand-font" style="font-size: 1.8rem; cursor:pointer;" onclick="router.navigate('listing')">CYBERVERSE</h2>
                 </div>
                 <div class="flex items-center gap-4">
                     <span id="user-display" class="brand-font" style="color: grey;">GUEST</span>
-                    <button onclick="router.navigate('profile')" class="cyber-btn"
-                        style="padding: 5px 15px; font-size: 0.8rem;">BOOKINGS</button>
-                    <button onclick="auth.logout()" class="cyber-btn red"
-                        style="padding: 5px 15px; font-size: 0.8rem;">DISCONNECT</button>
+                    <button onclick="router.navigate('profile')" class="cyber-btn" style="padding: 5px 15px; font-size: 0.8rem;">BOOKINGS</button>
+                    <button onclick="auth.logout()" class="cyber-btn red" style="padding: 5px 15px; font-size: 0.8rem;">DISCONNECT</button>
                 </div>
             </nav>
 
@@ -524,53 +293,39 @@
                     </div>
                     <div style="flex: 1;">
                         <label class="brand-font text-neon-blue" style="font-size: 0.9rem;">MAX CREDITS (PRICE)</label>
-                        <input type="range" id="filter-price" min="100" max="1000" step="50" value="1000" class="w-full"
-                            oninput="document.getElementById('price-disp').innerText = this.value; app.fetchCafes()">
+                        <input type="range" id="filter-price" min="100" max="1000" step="50" value="1000" class="w-full" oninput="document.getElementById('price-disp').innerText = this.value; app.fetchCafes()">
                         <span id="price-disp" style="float: right;">1000</span>
                     </div>
                 </div>
-
-                <div id="cafe-list" class="cafe-grid">
-                    <!-- CAFES INJECTED HERE -->
-                </div>
+                <div id="cafe-list" class="cafe-grid"></div>
             </div>
 
             <!-- DETAILS VIEW -->
             <div id="view-details" class="hidden">
                 <div id="cafe-hero" class="detail-hero">
                     <div class="container hero-title">
-                        <h1 id="det-name" class="text-neon-blue" style="font-size: 3rem; text-shadow: 0 0 20px black;">
-                            NAME</h1>
+                        <div id="det-name" style="margin-bottom: 10px;"></div>
                         <p id="det-area" class="brand-font" style="font-size: 1.5rem;">AREA</p>
                     </div>
                 </div>
-
                 <div class="container mt-4 flex gap-4" style="flex-wrap: wrap;">
                     <div style="flex: 2; min-width: 300px;">
                         <div class="cyber-border" style="padding: 20px; margin-bottom: 20px;">
                             <h3 class="text-neon-blue mb-4">SYSTEM SPECS</h3>
                             <p id="det-specs" style="font-size: 1.2rem; color: #ddd;"></p>
                         </div>
-
                         <div class="cyber-border" style="padding: 20px; margin-bottom: 20px;">
                             <h3 class="text-neon-blue mb-4">AVAILABLE SOFTWARE (GAMES)</h3>
                             <div id="det-games" class="flex" style="flex-wrap: wrap; gap: 10px;"></div>
                         </div>
-
                         <div class="cyber-border" style="padding: 20px; margin-bottom: 20px;">
                             <h3 class="text-neon-blue mb-4">LOCATION INTEL</h3>
                             <p id="det-travel" style="font-size: 1.1rem; color: #ddd; margin-bottom: 15px;"></p>
-                            <iframe id="det-map" width="100%" height="250"
-                                style="border:0; filter: invert(90%) hue-rotate(180deg);" loading="lazy"
-                                allowfullscreen></iframe>
+                            <iframe id="det-map" width="100%" height="250" style="border:0; filter: invert(90%) hue-rotate(180deg);" loading="lazy" allowfullscreen></iframe>
                         </div>
-
                         <div class="cyber-border" style="padding: 20px;">
                             <h3 class="text-neon-blue mb-4">USER LOGS (REVIEWS)</h3>
-                            <div id="det-reviews" style="max-height: 300px; overflow-y: auto; margin-bottom: 20px;">
-                            </div>
-
-                            <!-- Add Review Form -->
+                            <div id="det-reviews" style="max-height: 300px; overflow-y: auto; margin-bottom: 20px;"></div>
                             <div style="border-top: 1px solid #333; padding-top: 20px;">
                                 <h4 class="text-neon-green mb-2">ADD NEW LOG Entry</h4>
                                 <div class="flex gap-2 mb-2">
@@ -582,20 +337,17 @@
                                         <option value="1">★☆☆☆☆</option>
                                     </select>
                                 </div>
-                                <textarea id="new-rev-comment" class="cyber-input" rows="2"
-                                    placeholder="Mission Report..."></textarea>
+                                <textarea id="new-rev-comment" class="cyber-input" rows="2" placeholder="Mission Report..."></textarea>
                                 <button onclick="app.submitReview()" class="cyber-btn w-full mt-2">UPLOAD LOG</button>
                             </div>
                         </div>
                     </div>
-
                     <div style="flex: 1; min-width: 300px;">
                         <div class="booking-panel cyber-border">
                             <h3 class="text-neon-blue text-center mb-4">RESERVE TERMINAL</h3>
                             <div class="flex flex-col gap-4">
                                 <label>DATE</label>
                                 <input type="date" id="book-date" class="cyber-input">
-
                                 <label>DURATION</label>
                                 <select id="book-duration" class="cyber-input" onchange="booking.calcPrice()">
                                     <option value="1">1 Hour</option>
@@ -604,22 +356,15 @@
                                     <option value="3">3 Hours</option>
                                     <option value="5">5 Hours (Marathon)</option>
                                 </select>
-
                                 <label>SELECT TERMINAL TIME</label>
-                                <div id="slot-container" class="slot-grid">
-                                    <!-- Slots JS -->
-                                </div>
-
+                                <div id="slot-container" class="slot-grid"></div>
                                 <div style="margin-top: 20px; border-top: 1px solid #333; padding-top: 10px;">
                                     <div class="flex justify-between brand-font" style="font-size: 1.2rem;">
                                         <span>TOTAL</span>
                                         <span id="book-total" class="text-neon-blue">₹0</span>
-
                                     </div>
                                 </div>
-
-                                <button onclick="booking.confirm()" class="cyber-btn w-full mt-4">INITIATE
-                                    PAYMENT</button>
+                                <button onclick="booking.confirm()" class="cyber-btn w-full mt-4">INITIATE PAYMENT</button>
                             </div>
                         </div>
                     </div>
@@ -629,16 +374,12 @@
             <!-- PROFILE VIEW -->
             <div id="view-profile" class="container hidden">
                 <h2 class="text-neon-blue mt-4 mb-4">MY RESERVATIONS</h2>
-                <div id="booking-list" class="flex flex-col gap-4">
-                    <!-- Bookings Injected -->
-                </div>
+                <div id="booking-list" class="flex flex-col gap-4"></div>
             </div>
-
         </div>
 
-        <!-- SUCCESS MODAL (Overlay) -->
-        <div id="modal-success" class="hidden"
-            style="position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 2000; display: flex; align-items: center; justify-content: center;">
+        <!-- SUCCESS MODAL -->
+        <div id="modal-success" class="hidden" style="position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 2000; display: flex; align-items: center; justify-content: center;">
             <div class="cyber-border" style="padding: 40px; text-align: center; max-width: 500px; background: #000;">
                 <h2 class="text-neon-green" style="font-size: 2.5rem; margin-bottom: 20px;">ACCESS GRANTED</h2>
                 <p>Booking Confirmed. Digital Key sent to Comm Link.</p>
@@ -646,16 +387,16 @@
                     <h3 id="ticket-id" class="text-neon-blue">TICKET #893282</h3>
                     <p id="ticket-seat" style="font-size: 1.5rem; font-weight: bold; margin-top: 10px;">SEAT: PC-04</p>
                 </div>
-                <button
-                    onclick="document.getElementById('modal-success').classList.add('hidden'); router.navigate('listing')"
-                    class="cyber-btn">ACKNOWLEDGE</button>
+                <button onclick="document.getElementById('modal-success').classList.add('hidden'); router.navigate('listing')" class="cyber-btn">ACKNOWLEDGE</button>
             </div>
         </div>
-
     </div>
 
     <script>
-        // --- UTILS ---
+        // ===== CONFIGURATION =====
+        // REPLACE THIS WITH YOUR RENDER BACKEND URL AFTER DEPLOYMENT
+        const API_BASE_URL = 'https://your-app-name.onrender.com';
+        
         const $ = (sel) => document.querySelector(sel);
         const $$ = (sel) => document.querySelectorAll(sel);
 
@@ -668,15 +409,12 @@
             setTimeout(() => t.remove(), 4000);
         };
 
-        // --- ROUTER ---
         const router = {
             current: 'landing',
             navigate: (viewName) => {
-                // Hide all views
                 $$('[id^="view-"]').forEach(el => el.classList.add('hidden'));
-                $('main-interface')?.classList.add('hidden');
+                $('#main-interface')?.classList.add('hidden');
 
-                // Show requested view
                 if (['landing', 'login', 'signup'].includes(viewName)) {
                     $(`#view-${viewName}`).classList.remove('hidden');
                 } else {
@@ -684,13 +422,11 @@
                     $(`#view-${viewName}`).classList.remove('hidden');
                 }
 
-                // Logic triggers
                 if (viewName === 'listing') app.fetchCafes();
                 if (viewName === 'profile') app.fetchBookings();
             }
         };
 
-        // --- AUTH ---
         const auth = {
             user: null,
 
@@ -702,8 +438,10 @@
                     password: $('#reg-pass').value
                 };
                 try {
-                    const res = await fetch('/api/auth/signup', {
-                        method: 'POST', headers: { 'Content-Type': 'application/json' },
+                    const res = await fetch(`${API_BASE_URL}/api/auth/signup`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        credentials: 'include',
                         body: JSON.stringify(data)
                     });
                     const resData = await res.json();
@@ -713,7 +451,7 @@
                         router.navigate('listing');
                         notify("Welcome to the Cyberverse.");
                     } else notify(resData.error, 'error');
-                } catch (e) { notify("Network Error", 'error'); }
+                } catch (e) { notify("Network Error: " + e.message, 'error'); }
             },
 
             login: async () => {
@@ -722,8 +460,10 @@
                     password: $('#login-pass').value
                 };
                 try {
-                    const res = await fetch('/api/auth/login', {
-                        method: 'POST', headers: { 'Content-Type': 'application/json' },
+                    const res = await fetch(`${API_BASE_URL}/api/auth/login`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        credentials: 'include',
                         body: JSON.stringify(data)
                     });
                     const resData = await res.json();
@@ -733,7 +473,7 @@
                         router.navigate('listing');
                         notify("Access Granted.");
                     } else notify(resData.error, 'error');
-                } catch (e) { notify("Network Error", 'error'); }
+                } catch (e) { notify("Network Error: " + e.message, 'error'); }
             },
 
             demoLogin: async () => {
@@ -743,14 +483,13 @@
             },
 
             logout: async () => {
-                await fetch('/api/auth/logout', { method: 'POST' });
+                await fetch(`${API_BASE_URL}/api/auth/logout`, { method: 'POST', credentials: 'include' });
                 auth.user = null;
                 router.navigate('landing');
                 notify("Disconnected.");
             }
         };
 
-        // --- APP LOGIC ---
         const app = {
             cafes: [],
             currentCafe: null,
@@ -758,14 +497,16 @@
             fetchCafes: async () => {
                 const area = $('#filter-area').value;
                 const price = $('#filter-price').value;
-                const res = await fetch(`/api/cafes?area=${area}&price_max=${price}`);
-                app.cafes = await res.json();
-                app.renderCafes();
+                try {
+                    const res = await fetch(`${API_BASE_URL}/api/cafes?area=${area}&price_max=${price}`, { credentials: 'include' });
+                    app.cafes = await res.json();
+                    app.renderCafes();
+                } catch (e) { notify("Error loading cafes", 'error'); }
             },
 
             renderCafes: () => {
                 const html = app.cafes.map(c => `
-                    <div class="cafe-card cursor-pointer" onclick="app.openDetail(${c.id})">
+                    <div class="cafe-card" onclick="app.openDetail('${c.id}')">
                         <img src="${c.image_url}" class="cafe-img" alt="${c.name}">
                         <div class="cafe-content">
                             <div class="flex items-center gap-4 mb-2">
@@ -776,7 +517,6 @@
                                 </div>
                                 <span class="text-neon-green" style="font-weight:bold; font-size: 1.2rem;">★ ${c.rating}</span>
                             </div>
-                            
                             <div class="flex justify-between items-center mt-3" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px;">
                                 <span class="brand-font" style="font-size: 1.2rem;">₹${c.price_per_hour}/hr</span>
                                 <span style="color: #666; font-size: 0.9rem;">${c.distance_km} km</span>
@@ -788,73 +528,76 @@
             },
 
             openDetail: async (id) => {
-                const res = await fetch(`/api/cafe/${id}`);
-                const data = await res.json();
-                app.currentCafe = data;
+                try {
+                    const res = await fetch(`${API_BASE_URL}/api/cafe/${id}`, { credentials: 'include' });
+                    const data = await res.json();
+                    app.currentCafe = data;
 
-                // Populate Detail View
-                $('#det-name').innerHTML = `
-                    <div class="flex items-center gap-4">
-                        <img src="${data.logo_url}" style="width: 80px; height: 80px; border-radius: 50%; border: 2px solid var(--neon-blue); background: #000;">
-                        <span>${data.name}</span>
-                    </div>
-                `;
-                $('#det-area').innerText = `${data.area} SECTOR`;
-                $('#cafe-hero').style.backgroundImage = `url('${data.image_url}')`;
-                $('#det-specs').innerText = data.specs;
-                $('#det-travel').innerHTML = `<i class="fas fa-map-marker-alt text-neon-red"></i> &nbsp; ${data.travel_info}`;
-                $('#det-map').src = `https://www.google.com/maps?q=${data.name}+${data.area}+Mumbai&output=embed`;
-
-                $('#det-games').innerHTML = data.games.split(',').map(g =>
-                    `<span style="background: rgba(0,243,255,0.1); border: 1px solid var(--neon-blue); padding: 5px 10px; font-size: 0.8rem;">${g.trim()}</span>`
-                ).join('');
-
-                $('#det-reviews').innerHTML = data.reviews.length ? data.reviews.map(r => `
-                    <div style="margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 10px;">
-                        <div class="flex justify-between" style="margin-bottom: 5px;">
-                            <span class="text-neon-blue" style="font-weight: bold;">${r.user}</span> 
-                            <span class="text-neon-green">★${r.rating}</span>
+                    $('#det-name').innerHTML = `
+                        <div class="flex items-center gap-4">
+                            <img src="${data.logo_url}" style="width: 80px; height: 80px; border-radius: 50%; border: 2px solid var(--neon-blue); background: #000;">
+                            <span class="text-neon-blue" style="font-size: 3rem; text-shadow: 0 0 20px black;">${data.name}</span>
                         </div>
-                        <p style="color: #ccc; font-size: 0.9rem; font-style: italic;">"${r.comment}"</p>
-                    </div>
-                `).join('') : '<p style="color: #666;">No logs found.</p>';
+                    `;
+                    $('#det-area').innerText = `${data.area} SECTOR`;
+                    $('#cafe-hero').style.backgroundImage = `url('${data.image_url}')`;
+                    $('#det-specs').innerText = data.specs;
+                    $('#det-travel').innerHTML = `<i class="fas fa-map-marker-alt text-neon-red"></i> &nbsp; ${data.travel_info}`;
+                    $('#det-map').src = `https://www.google.com/maps?q=${data.name}+${data.area}+Mumbai&output=embed`;
 
-                // Reset Booking
-                $('#book-date').valueAsDate = new Date();
-                $('#book-duration').value = "1";
-                booking.generateSlots();
-                booking.calcPrice();
+                    $('#det-games').innerHTML = data.games.split(',').map(g =>
+                        `<span style="background: rgba(0,243,255,0.1); border: 1px solid var(--neon-blue); padding: 5px 10px; font-size: 0.8rem;">${g.trim()}</span>`
+                    ).join('');
 
-                router.navigate('details');
+                    $('#det-reviews').innerHTML = data.reviews.length ? data.reviews.map(r => `
+                        <div style="margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 10px;">
+                            <div class="flex justify-between" style="margin-bottom: 5px;">
+                                <span class="text-neon-blue" style="font-weight: bold;">${r.user}</span> 
+                                <span class="text-neon-green">★${r.rating}</span>
+                            </div>
+                            <p style="color: #ccc; font-size: 0.9rem; font-style: italic;">"${r.comment}"</p>
+                        </div>
+                    `).join('') : '<p style="color: #666;">No logs found.</p>';
+
+                    $('#book-date').valueAsDate = new Date();
+                    $('#book-duration').value = "1";
+                    booking.generateSlots();
+                    booking.calcPrice();
+
+                    router.navigate('details');
+                } catch (e) { notify("Error loading details", 'error'); }
             },
 
             fetchBookings: async () => {
-                const res = await fetch('/api/user/bookings');
-                const data = await res.json();
-                $('#booking-list').innerHTML = data.map(b => `
-                    <div class="cyber-border" style="padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-                        <div>
-                            <h3 class="text-neon-blue">${b.cafe_name}</h3>
-                            <p>${b.date} @ ${b.time}</p>
-                            <p style="color: #aaa;">Duration: ${b.duration}h | Seat: ${b.seat}</p>
+                try {
+                    const res = await fetch(`${API_BASE_URL}/api/user/bookings`, { credentials: 'include' });
+                    const data = await res.json();
+                    $('#booking-list').innerHTML = data.map(b => `
+                        <div class="cyber-border" style="padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <h3 class="text-neon-blue">${b.cafe_name}</h3>
+                                <p>${b.date} @ ${b.time}</p>
+                                <p style="color: #aaa;">Duration: ${b.duration}h | Seat: ${b.seat}</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-neon-green brand-font" style="font-size: 1.5rem;">STATUS: ${b.status.toUpperCase()}</span>
+                            </div>
                         </div>
-                        <div class="text-right">
-                            <span class="text-neon-green brand-font" style="font-size: 1.5rem;">STATUS: ${b.status.toUpperCase()}</span>
-                        </div>
-                    </div>
-                `).join('');
+                    `).join('');
+                } catch (e) { notify("Error loading bookings", 'error'); }
             },
 
             submitReview: async () => {
                 const rating = $('#new-rev-rating').value;
                 const comment = $('#new-rev-comment').value;
                 if (!comment) return notify("Comment required!", "error");
-
                 if (!auth.user) return notify("Login required to review!", "error");
 
                 try {
-                    const res = await fetch('/api/reviews', {
-                        method: 'POST', headers: { 'Content-Type': 'application/json' },
+                    const res = await fetch(`${API_BASE_URL}/api/reviews`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        credentials: 'include',
                         body: JSON.stringify({
                             cafe_id: app.currentCafe.id,
                             rating: rating,
@@ -864,13 +607,12 @@
                     if (res.ok) {
                         notify("Log Uploaded.");
                         $('#new-rev-comment').value = '';
-                        app.openDetail(app.currentCafe.id); // Refresh
+                        app.openDetail(app.currentCafe.id);
                     } else notify("Upload Failed", "error");
                 } catch (e) { notify("Network Error", "error"); }
             }
         };
 
-        // --- BOOKING LOGIC ---
         const booking = {
             selectedSlot: null,
             totalPrice: 0,
@@ -879,17 +621,14 @@
                 const hours = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
                 const grid = $('#slot-container');
                 grid.innerHTML = hours.map(h => {
-                    const isBooked = Math.random() < 0.3; // Random availability
+                    const isBooked = Math.random() < 0.3;
                     const time = `${h}:00`;
-                    return `<div 
-                        class="slot-btn ${isBooked ? 'booked' : 'available'}" 
-                        ${!isBooked ? `onclick="booking.selectSlot(this, '${time}')"` : ''}
-                    >${time}</div>`;
+                    return `<div class="slot-btn ${isBooked ? 'booked' : 'available'}" ${!isBooked ? `onclick="booking.selectSlot(this, '${time}')"` : ''}>${time}</div>`;
                 }).join('');
             },
 
             selectSlot: (el, time) => {
-                $$('.slot-btn').forEach(b => b.classList.remove('selected'));
+                $('.slot-btn').forEach(b => b.classList.remove('selected'));
                 el.classList.add('selected');
                 booking.selectedSlot = time;
             },
@@ -902,7 +641,8 @@
             },
 
             confirm: async () => {
-                if (!booking.selectedSlot) return notify("Please select a time slot.", 'error');
+                if (!auth.user) return notify("System Access Required (Login)", "error");
+                if (!booking.selectedSlot) return notify("Select Time Slot", "error");
 
                 const data = {
                     cafe_id: app.currentCafe.id,
@@ -913,27 +653,23 @@
                 };
 
                 try {
-                    const res = await fetch('/api/book', {
-                        method: 'POST', headers: { 'Content-Type': 'application/json' },
+                    const res = await fetch(`${API_BASE_URL}/api/book`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        credentials: 'include',
                         body: JSON.stringify(data)
                     });
                     const resData = await res.json();
-
                     if (res.ok) {
-                        $('#ticket-id').innerText = `TICKET #${resData.booking_id}`;
-                        $('#ticket-seat').innerText = `SEAT: ${resData.seat}`;
                         $('#modal-success').classList.remove('hidden');
-                    } else {
-                        notify(resData.error, 'error');
-                    }
-                } catch (e) { notify("Transaction Failed", 'error'); }
+                        $('#ticket-id').innerText = `TICKET #${resData.booking_id.substring(0, 8).toUpperCase()}`;
+                        $('#ticket-seat').innerText = `SEAT: ${resData.seat}`;
+                    } else notify("Booking Failed", "error");
+                } catch (e) { notify("Network Error", "error"); }
             }
         };
 
-        // Initialize view
-        router.navigate('landing');
-
+        if (!auth.user) router.navigate('landing');
     </script>
 </body>
-
-</html>
+</html
